@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>/</loc>
+        <loc>https://jakubgutowski.github.io/ziomkigliwice/</loc>
     </url>
     <url>
-        <loc>/club/</loc>
+        <loc>https://jakubgutowski.github.io/ziomkigliwice/club/</loc>
     </url>
     <url>
-        <loc>/instruktorzy/lukasz-wisniewski/</loc>
+        <loc>https://jakubgutowski.github.io/ziomkigliwice/instruktorzy/lukasz-wisniewski/</loc>
     </url>
     <url>
-        <loc>/school/</loc>
+        <loc>https://jakubgutowski.github.io/ziomkigliwice/school/</loc>
     </url>
 </urlset>

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: /sitemap.xml
+Sitemap: https://jakubgutowski.github.io/ziomkigliwice/sitemap.xml
