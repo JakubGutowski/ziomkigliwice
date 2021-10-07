@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Klub Sportowy |  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #000000;
+        /* Primary theme text color */
+        --primary-text-color: #ffffff;
+        /* Primary theme link color */
+        --primary-link-color: #d64b00;
+        /* Secondary color: the background body color */
+        --secondary-color: #fbfbfb;
+        --secondary-text-color: #000000;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d64b00;
+    }
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+
+<a href="&#x2F;club&#x2F;">
+    <div class="logo">
+        <img src="/zg_white.svg" alt="logo">
+        Ziomki Gliwice
+    </div>
+</a>
+
+<nav>
+    <a class="subtitle-text nav-item" href="&#x2F;school&#x2F;">Szkółka</a>
+    <a class="subtitle-text nav-item" href="&#x2F;club&#x2F;">Klub Sportowy</a>
+    
+        
+        <a class="subtitle-text nav-item" href="https:&#x2F;&#x2F;stickall.pl">Stickall Skateshop</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+    
+    
+    
+    
+    <div class="toc">
+        <div class="toc-sticky">
+            
+            <div class="toc-item">
+                <a class="subtext" href="/club/#ks-zg">KS ZG</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+
+        <div class="content text">
+            
+        <div id="features" class="heading-text">Overview</div>
+        <h1 id="ks-zg">KS ZG</h1>
+<p>Klub ma na celu promowanie współzawodnictwa sportowego w ramach
+Drużynowego Pucharu Polski w jeździe na deskorolce. Najlepsi nasi kursanci będą
+mieli możliwość reprezentowania klubu. Pitu pitu dalej coś tam.</p>
+
+        
+        </div>
+
+        
+    
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>

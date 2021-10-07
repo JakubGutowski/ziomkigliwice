@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Szkółka |  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #000000;
+        /* Primary theme text color */
+        --primary-text-color: #ffffff;
+        /* Primary theme link color */
+        --primary-link-color: #d64b00;
+        /* Secondary color: the background body color */
+        --secondary-color: #fbfbfb;
+        --secondary-text-color: #000000;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d64b00;
+    }
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+    
+    
+</head>
+
+<body>
+    
+<header class="box-shadow">
+    
+
+
+<a href="&#x2F;school&#x2F;">
+    <div class="logo">
+        <img src="/zg_white.svg" alt="logo">
+        Ziomki Gliwice
+    </div>
+</a>
+
+<nav>
+    <a class="subtitle-text nav-item" href="&#x2F;school&#x2F;">Szkółka</a>
+    <a class="subtitle-text nav-item" href="&#x2F;club&#x2F;">Klub Sportowy</a>
+    
+        
+        <a class="subtitle-text nav-item" href="https:&#x2F;&#x2F;stickall.pl">Stickall Skateshop</a>
+        
+    
+</nav>
+
+</header>
+
+
+    <main>
+        
+    
+    
+    
+    
+    <div class="toc">
+        <div class="toc-sticky">
+            
+            <div class="toc-item">
+                <a class="subtext" href="/school/#szkolka">Szkółka</a>
+            </div>
+            
+            
+            <div class="toc-item">
+                <a class="subtext" href="/school/#instruktorzy">Instruktorzy</a>
+            </div>
+            
+            
+            <div class="toc-item-child">
+                <a class="subtext" href="/school/#lukasz-wisniewski"><small>- Łukasz Wiśniewski</small></a>
+            </div>
+            
+            
+            
+            <div class="toc-item">
+                <a class="subtext" href="/school/#cennik">Cennik</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+
+        <div class="content text">
+            
+        <div id="features" class="heading-text">Overview</div>
+        <h1 id="szkolka">Szkółka</h1>
+<p><strong>Pierwsza szkółka</strong> w Gliwicach</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi nullam vehicula ipsum a arcu cursus. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Sed enim ut sem viverra aliquet eget sit amet. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Porttitor leo a diam sollicitudin tempor id. Non odio euismod lacinia at quis risus sed vulputate. Adipiscing tristique risus nec feugiat in fermentum posuere. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. At lectus urna duis convallis convallis tellus. Consectetur lorem donec massa sapien faucibus et molestie. Nec ullamcorper sit amet risus nullam eget. Cursus vitae congue mauris rhoncus</p>
+<h1 id="instruktorzy">Instruktorzy</h1>
+<h3 id="lukasz-wisniewski">Łukasz Wiśniewski</h3>
+<table><thead><tr><th></th><th align="left"></th></tr></thead><tbody>
+<tr><td><img src="/processed_images/bdfcf49aaa42b3ca00.jpg" alt="Test Text" title="Test" /></td><td align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi nullam vehicula ipsum a arcu cursus. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Sed enim ut sem viverra aliquet eget sit amet. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Porttitor leo a diam sollicitudin tempor id. Non odio euismod lacinia at quis risus sed vulputate. Adipiscing tristique risus nec feugiat in fermentum posuere. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent. At lectus urna duis convallis convallis tellus. Consectetur lorem donec massa sapien faucibus et molestie. Nec ullamcorper sit amet risus nullam eget. Cursus vitae congue mauris rhoncus.</td></tr>
+</tbody></table>
+<h1 id="cennik">Cennik</h1>
+<table><thead><tr><th align="left">Rodzaj</th><th align="center">Czas</th><th align="center">Cena</th></tr></thead><tbody>
+<tr><td align="left">Zajęcia indywidualne</td><td align="center">1h</td><td align="center">99zł</td></tr>
+<tr><td align="left">Zajęcia grupowe</td><td align="center">1h</td><td align="center">99zł/os.</td></tr>
+</tbody></table>
+
+        
+        </div>
+
+        
+    
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #000000;
+        /* Primary theme text color */
+        --primary-text-color: #ffffff;
+        /* Primary theme link color */
+        --primary-link-color: #d64b00;
+        /* Secondary color: the background body color */
+        --secondary-color: #fbfbfb;
+        --secondary-text-color: #000000;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #d64b00;
+    }
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
+    
+    
+</head>
+
+<body>
+    
+
+    <header class="pos-absolute" style="background-color: transparent">
+        
+
+
+<a href="&#x2F;">
+    <div class="logo">
+        <img src="/zg_white.svg" alt="logo">
+        Ziomki Gliwice
+    </div>
+</a>
+
+<nav>
+    <a class="subtitle-text nav-item" href="&#x2F;school&#x2F;">Szkółka</a>
+    <a class="subtitle-text nav-item" href="&#x2F;club&#x2F;">Klub Sportowy</a>
+    
+        
+        <a class="subtitle-text nav-item" href="https:&#x2F;&#x2F;stickall.pl">Stickall Skateshop</a>
+        
+    
+</nav>
+
+    </header>
+
+    <div class="hero">
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <section class="text-center">
+            <h1 class="lead-text" style="font-size: 50px">
+                Gliwicka Deskorolka w Jednym Miejscu
+            </h1>
+            <h3 class="sublead-text">
+                Wszystko co musicie wiedzieć i nie tylko
+            </h3>
+        </section>
+        <img class="hero-image" style="width: 50%" src="/zg_white.svg">
+
+        <div class="explore-more text"
+            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            Więcej ⇩
+        </div>
+        <style>
+            .hero section {
+                padding: 0 5rem;
+            }
+            @media screen and (max-width: 768px) {
+                .hero section {
+                    padding: 0 2rem;
+                }
+
+                .hero-image {
+                    display: none
+                }
+            }
+        </style>
+        
+    </div>
+
+    
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#nagowek-1">Nagówek 1</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#zajawa">Zajawa</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/#css-variables"><small>- CSS variables</small></a>
+                </div>
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="/#favicon"><small>- Favicon</small></a>
+                </div>
+                
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#configuration">Configuration</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#shortcodes">Shortcodes</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#showcases">Showcases</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="/#contributing">Contributing</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+            <div id="features" class="heading-text">Overview</div>
+            <h1 id="nagowek-1">Nagówek 1</h1>
+<p>Możemy pisać w fajnyksiążkowy sposób</p>
+<ul>
+<li>Deskorolka</li>
+<li>Tanio i Dużo</li>
+</ul>
+<h1 id="zajawa">Zajawa</h1>
+<pre><code>+++
+title = &quot;Changelog&quot;
+description = &quot;Changelog&quot;
+weight = 2
++++
+
+</code></pre>
+<h3 id="css-variables">CSS variables</h3>
+<p>You can override theme variable by creating a file named <code>_variables.html</code> in your <code>templates</code> directory.</p>
+<pre data-lang="html" class="language-html "><code class="language-html" data-lang="html">&lt;style&gt;
+    :root {
+        &#x2F;* Primary theme color *&#x2F;
+        --primary-color: #FED43F;
+        &#x2F;* Primary theme text color *&#x2F;
+        --primary-text-color: #543631;
+        &#x2F;* Primary theme link color *&#x2F;
+        --primary-link-color: #F9BB2D;
+        &#x2F;* Secondary color: the background body color *&#x2F;
+        --secondary-color: #fcfaf6;
+        --secondary-text-color: #303030;
+        &#x2F;* Highlight text color of table of content *&#x2F;
+        --toc-highlight-text-color: #d46e13;
+    }
+&lt;&#x2F;style&gt;
+</code></pre>
+<h3 id="favicon">Favicon</h3>
+<pre data-lang="html" class="language-html "><code class="language-html" data-lang="html">{% extends &quot;juice&#x2F;templates&#x2F;index.html&quot; %}
+{% block favicon %}
+    &lt;link rel=&quot;icon&quot; type=&quot;image&#x2F;png&quot; href=&quot;&#x2F;favicon.ico&quot;&gt;
+{% endblock favicon %}
+</code></pre>
+<h1 id="configuration">Configuration</h1>
+<p>You can customize some builtin property in <code>config.toml</code> file:</p>
+<pre data-lang="toml" class="language-toml "><code class="language-toml" data-lang="toml">[extra]
+juice_logo_name = &quot;Juice&quot;
+juice_logo_path = &quot;juice.svg&quot;
+juice_extra_menu = [
+    { title = &quot;Github&quot;, link = &quot;https:&#x2F;&#x2F;github.com&#x2F;huhu&#x2F;juice&quot;}
+]
+repository_url = &quot;https:&#x2F;&#x2F;github.com&#x2F;huhu&#x2F;juice&quot;
+</code></pre>
+<h1 id="shortcodes">Shortcodes</h1>
+<p><strong>Juice</strong> have some builtin shortcodes available in <code>templates/shortcodes</code> directory.</p>
+<ul>
+<li><code>issue(id)</code> - A shortcode to render issue url, e.g. <code>issue(id=1)</code> would render to the link <code>https://github.com/huhu/juice/issue/1</code>.</li>
+</ul>
+<blockquote>
+<p>The <code>repository_url</code> is required.</p>
+</blockquote>
+<h1 id="showcases">Showcases</h1>
+<p>Please see the <a href="/showcases">showcases page</a>.</p>
+<h1 id="contributing">Contributing</h1>
+<p>Thank you very much for considering contributing to this project!</p>
+<p>We appreciate any form of contribution:</p>
+<ul>
+<li>New issues (feature requests, bug reports, questions, ideas, ...)</li>
+<li>Pull requests (documentation improvements, code improvements, new features, ...)</li>
+</ul>
+
+            
+        </div>
+
+        
+        
+    </main>
+
+    
+    <footer>
+        <small class="subtext">
+            <a href="https://huhu.io">Huhu.io</a> © 2021
+        </small>
+    </footer>
+    
+</body>
+<script>
+    function highlightNav(heading) {
+        let pathname = location.pathname;
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+        document.querySelector(".toc a[href$='" + pathname + "#" + heading + "']").classList.add("active");
+    }
+
+    let currentHeading = "";
+    window.onscroll = function () {
+        let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let elementArr = [];
+
+        h.forEach(item => {
+            if (item.id !== "") {
+                elementArr[item.id] = item.getBoundingClientRect().top;
+            }
+        });
+        elementArr.sort();
+        for (let key in elementArr) {
+            if (!elementArr.hasOwnProperty(key)) {
+                continue;
+            }
+            if (elementArr[key] > 0 && elementArr[key] < 300) {
+                if (currentHeading !== key) {
+                    highlightNav(key);
+                    currentHeading = key;
+                }
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
