@@ -3,59 +3,16 @@ title = "Juice"
 sort_by = "weight"
 +++
 
-# Juice
+# Nagówek 1
 
-**Juice** is an intuitive, elegant, and responsive Zola theme for product sites.
+Możemy pisać w fajnyksiążkowy sposób
 
-- Build for product sites
-- Simple and intuitive structure
-- Clean and elegant design 
-- Responsive and mobile device compatible
-- Customize and extend friendly
+- Deskorolka
+- Tanio i Dużo
 
-# Installation
 
-> **Zola** is a prerequisite. Please refer to the [Zola installation](https://www.getzola.org/documentation/getting-started/installation/) docs.
+# Zajawa
 
-First download this theme to your `themes` directory:
-
-```bash
-$ cd themes
-$ git clone https://github.com/huhu/juice.git
-```
-
-or add as a submodule
-```bash
-$ git submodule add https://github.com/huhu/juice  themes/juice
-```
-
-and then enable it in your `config.toml`:
-
-```toml
-theme = "juice"
-```
-
-# Structure
-
-### Hero
-
-**Juice** is designed for product websites, hence we let **hero** part fills whole of screen.
-You can customize your **hero** by using `hero` block in the `templates/index.html`.
-
-```html
-{% extends "juice/templates/index.html" %}
-{% block hero %}
-    <div>
-        Your cool hero html...
-    </div>
-{% endblock hero %}
-```
-
-### Page
-
-Every markdown file located in `content` directory will become a **Page**. There also will display as
-a navigate link on the top-right corner. 
-You can change the frontmatter's `weight` value to sort the order (ascending order).
 
 ```
 +++
@@ -113,10 +70,10 @@ repository_url = "https://github.com/huhu/juice"
 
 # Shortcodes
 
-**Juice** have some builtin shortcodes available in `templates/shortcodes` directory. 
+**Juice** have some builtin shortcodes available in `templates/shortcodes` directory.
 
 - `issue(id)` - A shortcode to render issue url, e.g. `issue(id=1)` would render to the link `https://github.com/huhu/juice/issue/1`.
-  
+
 > The `repository_url` is required.
 
 # Showcases

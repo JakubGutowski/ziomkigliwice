@@ -17,5 +17,5 @@ highlight_code = false
 juice_logo_name = "Ziomki Gliwice"
 juice_logo_path = "zg_white.svg"
 juice_extra_menu = [
-    { title = "Github", link = "https://github.com/huhu/juice" }
+  { title = "Stickall Skateshop", link = "https://stickall.pl" }
 ]

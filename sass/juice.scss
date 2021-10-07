@@ -59,7 +59,7 @@ header {
   font-weight: bold;
 
   &:hover {
-    color: #000;
+    color: var(--primary-link-color);
     text-decoration: underline;
   }
 }
@@ -75,6 +75,7 @@ header {
 
   .explore-more {
     position: absolute;
+    color: var(--primary-text-color);
     bottom: 20px;
     cursor: pointer;
   }
@@ -117,7 +118,7 @@ main {
 
 .toc-sticky {
   border-radius: 3px;
-  border-top: 5px solid var(--primary-color);
+  border-top: 5px solid var(--primary-link-color);
   background-color: white;
   position: sticky;
   position: -webkit-sticky;
